@@ -21,6 +21,11 @@ return {
             function() require('fzf-lua').files({cwd=vim.fn.stdpath("config")}) end,
             desc="Find in neovim configuration"
         },
+        { 
+            "<leader>gb",
+            function() require('fzf-lua').git_branches() end,
+            desc="Find in neovim configuration"
+        },
         {
             "<leader>fh",
             function()
