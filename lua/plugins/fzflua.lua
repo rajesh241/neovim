@@ -8,7 +8,7 @@ return {
     keys={
         { 
             "<leader>ff",
-            function() require('fzf-lua').files() end,
+            function() require('fzf-lua').git_files() end,
             desc="Find Files in project directory"
         },
         { 

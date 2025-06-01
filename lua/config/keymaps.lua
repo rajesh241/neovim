@@ -3,6 +3,10 @@ vim.keymap.set("n", "gl", function()
     vim.diagnostic.open_float()
 end, { desc = "Open Diagnostics in Float" })
 
+vim.keymap.set("n", "gn", function()
+    vim.diagnostic.goto_next()
+end, { desc = "GOTo next diagnostics" })
+
 vim.keymap.set("n", "<leader>cf", function()
     require("conform").format({
         lsp_format = "fallback",
