@@ -18,6 +18,7 @@ return {
                     html = true,
                     javascript = true,
                     typescript = true,
+                    python = true,
                     ["*"] = true,
                 },
             })
