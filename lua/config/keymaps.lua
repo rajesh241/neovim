@@ -16,3 +16,5 @@ end, { desc = "Format current file" })
 
 -- Map <leader>fp to open projects
 vim.keymap.set("n", "<leader>fp", ":ProjectFzf<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>gb", require("gitsigns").toggle_current_line_blame)
